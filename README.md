@@ -52,8 +52,9 @@ The 1,3-benzothiazin-4-one scaffold is the core of the benzothiazinone (BTZ) cla
 
 ## Validation
 
-- **Binding-site check:** the grid is centered on the co-crystallized BTZ043 in chain A. 25 of its 28 ligand atoms lie within 4.5 Å of the prepared receptor, confirming that the prepared structure covers the site.
-- **Redocking:** redocking of the co-crystallized ligand with RMSD calculation is planned.
+- **Binding-site check:** the grid is centered on the co-crystallized BTZ043 (ligand code 0SK) in chain A. 25 of its 28 ligand atoms lie within 4.5 Å of the prepared receptor.
+- **Redocking:** the co-crystallized ligand (nitroso form, as found in 6HEZ) was redocked into the same grid. With the screening settings (exhaustiveness 8, 5 poses), the top-ranked pose had an RMSD of 9.43 Å and the closest pose was 2.37 Å. With more thorough sampling (exhaustiveness 32, 20 poses, seed 42), the top-ranked pose (-9.95 kcal/mol) had an RMSD of 9.45 Å, while several lower-ranked poses were close to the crystal pose, the closest being pose 12 (-8.52 kcal/mol, RMSD 1.60 Å).
+- **Interpretation:** Vina can sample the crystallographic binding mode but does not rank it first, so the protocol does not meet the usual criterion of a top-ranked pose within 2 Å of the crystal pose. A likely contributor is that the crystal ligand is covalently bound to Cys387, which Vina cannot model. Binding affinities in this repository should therefore be read as exploratory rankings, not validated predictions.
 
 ## Results
 
@@ -98,7 +99,8 @@ Docked poses for the top 20 ligands are in `results/top_poses/`.
 - Vina does not model covalent bond formation, so any covalent binding mode of the reference ligand is not captured.
 - The ligand set is restricted to nitro-containing benzothiazinones with MW 400-520, so conclusions apply to this subset only.
 - Redocking validation and comparison with experimental activity data have not yet been done.
-
+- Redocking of the co-crystallized ligand did not recover the crystal pose as the top-ranked result (see Validation), and the 100-ligand screen used a lower exhaustiveness (8) than the validation run.
+  
 ## Planned additions
 
 - Redocking of the co-crystallized ligand with RMSD
