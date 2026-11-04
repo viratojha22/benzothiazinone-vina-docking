@@ -115,7 +115,7 @@ Docked poses for the top 20 ligands are in `results/top_poses/`.
 - O'Boyle NM, et al. Open Babel: an open chemical toolbox. *J Cheminform.* 2011;3:33.
 - RDKit: open-source cheminformatics, https://www.rdkit.org
 - Meeko: https://github.com/forlilab/Meeko
-- Protein structure: PDB ID 6HEZ, [authors and publication].
+- Protein structure: PDB ID 6HEZ, [10.2210/pdb6HEZ/pdb].
 
 ## Acknowledgments
 
