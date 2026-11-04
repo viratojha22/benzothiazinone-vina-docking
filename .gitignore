@@ -1,0 +1,58 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.ipython/
+.jupyter/
+
+# Testing / tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Docking outputs (large, regenerable) ----------
+results/poses/
+*.log
+*_out.pdbqt
+
+# ---------- Intermediate preparation files ----------
+data/ligands/pdbqt/
+data/ligands/3d/
+*.mol2
+
+# ---------- Large binaries (download inside the notebook instead) ----------
+vina_1.2.5_linux_x86_64
+vina_*
+*.tar.gz
+*.zip
+
+# ---------- Secrets and local config ----------
+.env
+*.key
+credentials.json
+
+# ---------- OS / editor clutter ----------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
