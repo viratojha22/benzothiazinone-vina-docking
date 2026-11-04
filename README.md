@@ -97,6 +97,7 @@ Docked poses for the top 20 ligands are in `results/top_poses/`.
 - Vina scores are computational estimates of binding affinity and do not replace experimental measurements.
 - The receptor is treated as rigid, and only chain A with its cofactor is used.
 - Vina does not model covalent bond formation, so any covalent binding mode of the reference ligand is not captured.
+- The redocking used the nitroso form found in the crystal structure, whereas the screened ligands are nitro compounds docked non-covalently. Nitro-benzothiazinones act as prodrugs that are activated in the bacterium, and this screen does not model that activation.
 - The ligand set is restricted to nitro-containing benzothiazinones with MW 400-520, so conclusions apply to this subset only.
 - No comparison with experimental activity data has been done.
 - Redocking of the co-crystallized ligand did not recover the crystal pose as the top-ranked result (see Validation), and the 100-ligand screen used a lower exhaustiveness (8) than the validation run.
