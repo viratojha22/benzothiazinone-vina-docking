@@ -98,7 +98,7 @@ Docked poses for the top 20 ligands are in `results/top_poses/`.
 - The receptor is treated as rigid, and only chain A with its cofactor is used.
 - Vina does not model covalent bond formation, so any covalent binding mode of the reference ligand is not captured.
 - The ligand set is restricted to nitro-containing benzothiazinones with MW 400-520, so conclusions apply to this subset only.
-- Redocking validation and comparison with experimental activity data have not yet been done.
+- No comparison with experimental activity data has been done.
 - Redocking of the co-crystallized ligand did not recover the crystal pose as the top-ranked result (see Validation), and the 100-ligand screen used a lower exhaustiveness (8) than the validation run.
   
 ## Planned additions
