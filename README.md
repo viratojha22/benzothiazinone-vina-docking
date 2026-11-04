@@ -103,7 +103,6 @@ Docked poses for the top 20 ligands are in `results/top_poses/`.
   
 ## Planned additions
 
-- Redocking of the co-crystallized ligand with RMSD
 - 2D interaction diagrams for the top hits
 - Protein-ligand interaction analysis (hydrogen bonds and contacts)
 
