@@ -70,6 +70,18 @@ Top five ligands by best predicted binding affinity. The full ranking is in `res
 
 Docked poses for the top 20 ligands are in `results/top_poses/`.
 
+### Docking scores
+Top 20 ligands ranked by AutoDock Vina score (kcal/mol) across 5 binding modes. Darker cells indicate stronger predicted binding.
+
+![Docking score heatmap](results/figures/Heatmap.png)
+
+### Protein–ligand contacts
+Minimum distance (Å) between each ligand's best pose and receptor residues within 4.0 Å. Residues contacted by several ligands mark the key binding-site interactions.
+
+![Protein–ligand contact heatmap](results/figures/ligand_contact_heatmap.png)
+
+**Docking settings:** receptor 6HEZ (chain A), AutoDock Vina 1.2.5, exhaustiveness 8, 5 modes. Vina scores are approximate estimates, not experimental affinities.
+
 ## Repository structure
 
 ```
